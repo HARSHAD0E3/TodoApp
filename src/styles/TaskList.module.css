@@ -1,0 +1,143 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 10rem 0rem;
+  width: 100%;
+  max-width: 50%;
+  margin: 0px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  position: fixed;
+  max-width: 60%;
+  margin: 0 auto;
+  top: 24rem;
+  backdrop-filter: blur(2rem);
+  padding: 10rem 5rem 0;
+  z-index: 1;
+}
+
+.header div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.header div p {
+  font-size: 1.8rem;
+  color: #6287ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header div .completed {
+  font-size: 1.8rem;
+  color: #dadada;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header div span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #1b1b1b;
+  padding: 0.2rem 1rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.taskslist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-top: 3.2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header {
+        max-width: 70%;
+    }
+
+    .tasks {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header div p {
+        font-size: 1.4rem;
+    }
+
+    .header div .completed {
+        font-size: 1.4rem;
+    }
+
+    .header div span {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .header {
+        max-width: 80%;
+    }
+
+    .tasks {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header {
+        max-width: 90%;
+    }
+
+    .tasks {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header div p {
+        font-size: 1.2rem;
+    }
+
+    .header div .completed {
+        font-size: 1.2rem;
+    }
+
+    .header div span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .header {
+        top: 22rem;
+    }
+
+    .header div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        padding: 10rem 2rem 0;
+    }
+
+    .tasks {
+        max-width: 80%;
+    }
+}

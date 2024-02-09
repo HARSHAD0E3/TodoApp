@@ -1,0 +1,20 @@
+.header {
+  background: #222222;
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1031;
+  width: 100vw;
+}
+
+.img {
+  padding: 10px;
+}
+
+.logo {
+  padding-top: 6px;
+  color: #f2f2f2;
+  text-decoration: none;
+}

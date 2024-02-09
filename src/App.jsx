@@ -1,11 +1,18 @@
-import "./App.css";
+import Header from "./components/Header";
+import CreateTask from "./components/CreateTask";
+import TaskList from "./components/TaskList";
+import TaskContext from "./store/TaskContextProvider";
+
+
 
 function App() {
   return (
     <>
-      <div>
-        <h1>New React App</h1>
-      </div>
+      <TaskContext>
+        <Header></Header>
+        <CreateTask></CreateTask>
+        <TaskList></TaskList>
+      </TaskContext>
     </>
   );
 }

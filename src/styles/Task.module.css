@@ -1,0 +1,48 @@
+.task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222222;
+  padding: 2rem;
+  border-radius: 5px;
+  gap: 2rem;
+}
+
+.checkContainer {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+}
+
+.checkContainer div {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #6287ff;
+  border-radius: 50%;
+}
+
+.checkContainer svg {
+  width: 100%;
+  height: 100%;
+  color: #6287ff;
+}
+
+.task p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #fff;
+  margin-right: auto;
+}
+
+p.taskCompleted {
+  color: #6d6d6d;
+  text-decoration: line-through;
+}
+
+.delBtn {
+  background: none;
+  border: none;
+  color: #dadada;
+}

@@ -1,0 +1,114 @@
+.newTaskContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 50px;
+  position: fixed;
+  top: 60px;
+  z-index: 1031;
+  backdrop-filter: blur(2rem);
+}
+
+.newTask {
+  width: 100%;
+  max-width: 55%;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  max-width: 55%;
+  padding: 0 1rem;
+}
+
+.newTask input {
+  height: 5.4rem;
+  flex: 1;
+  color: #fff;
+  background: #262626;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  padding: 0 1.6rem;
+  font-size: 1.6rem;
+}
+
+.newTask input:focus {
+  outline: none;
+}
+
+.newTask input::placeholder {
+  letter-spacing: 1.5px;
+}
+
+.newTask button {
+  height: 5.4rem;
+  padding: 0 2.4rem;
+  background: #6287ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .newTask {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .newTask {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .newTask {
+    padding: 0;
+  }
+
+  .newTask input {
+    font-size: 1.4rem;
+  }
+
+  .newTask button {
+    font-size: 1.2rem;
+    padding: 0 1.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .newTask {
+    max-width: 95%;
+    gap: 1rem;
+    flex-direction: column;
+    height: 40%;
+    align-items: center;
+  }
+
+  .newTask input {
+    width: 80%;
+  }
+
+  .newTask button {
+    padding: 0 1rem;
+    gap: 0.5rem;
+    width: 30%;
+    margin: 0 auto;
+    height: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .newTaskForm {
+    padding: 0;
+    max-width: 85%;
+  }
+}
